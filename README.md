@@ -1,7 +1,11 @@
 # 💳 Fraud Detection in Transactions (Machine Learning Project)
 
 A machine learning project focused on identifying fraudulent financial transactions using a real-world dataset. This project is designed to demonstrate data preprocessing, handling class imbalance, model building, evaluation, and interpretation for a high-impact fraud detection use case.
+This project detects fraudulent transactions using a two-stage approach:
+1. **SQL-based exploratory data analysis**
+2. **Machine Learning model (Random Forest) using Python**
 
+The goal was to identify patterns in fraudulent behavior and build a predictive model with high recall, as fraud detection focuses more on catching frauds than avoiding false positives.
 ---
 
 ## 📁 Dataset
@@ -22,7 +26,7 @@ Financial fraud is a serious concern in digital transactions. The goal is to bui
 
 ## 🧪 Steps Followed
 
-1. **Exploratory Data Analysis (EDA)**
+1. **Exploratory Data Analysis (EDA)** using SQL
    - Checked sample data, missing values, data types
    - Dropped non-informative columns (`nameOrig`, `nameDest`)
 
@@ -92,7 +96,9 @@ Top features contributing to fraud detection.
 
 ## 🛠️ Tools Used
 
-- Python, Pandas, NumPy
+
+-SQL(Mysql Workbench)
+-Python, Pandas, NumPy
 - Scikit-learn
 - imbalanced-learn (SMOTE)
 - Seaborn, Matplotlib
